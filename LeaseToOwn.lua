@@ -52,7 +52,7 @@ function LeaseToOwn:onFrameClose()
 end
 
 function LeaseToOwn:onPageStatisticsTabIndexChanged(index, count)
-    logger:debug("LeaseToOwn:onTabIndexChanged pageStatistics")
+    logger:debug("LeaseToOwn:onPageStatisticsTabIndexChanged pageStatistics")
 
     local menuButton = g_inGameMenu.leasePurchase_Button
 
@@ -62,7 +62,7 @@ function LeaseToOwn:onPageStatisticsTabIndexChanged(index, count)
 end
 
 function LeaseToOwn:onVehicleListIndexChanged(index, count)
-    logger:debug("LeaseToOwn:onIndexChanged vehiclesList")
+    logger:debug("LeaseToOwn:onVehicleListIndexChanged vehiclesList")
 
     if g_inGameMenu.leasePurchase_Button ~= nil then
         local vehicle = g_inGameMenu.vehiclesList.dataSource.vehicles[index].vehicle
